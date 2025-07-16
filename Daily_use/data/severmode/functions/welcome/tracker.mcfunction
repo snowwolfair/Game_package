@@ -1,0 +1,1 @@
+execute as @p[scores={uuid=0}] run function severmode:welcome/welcome

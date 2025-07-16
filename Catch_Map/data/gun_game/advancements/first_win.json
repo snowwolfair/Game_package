@@ -1,0 +1,32 @@
+{
+    "display":{
+        "icon":{
+            "item":"minecraft:golden_sword"
+        },
+        "title":"初次胜利",
+        "description":"首次在一局枪战中获胜",
+        "background":"minecraft:textures/block/quartz_bricks.png",
+        
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+        
+    },
+    "criteria":{
+        "win_game":{
+            "trigger":"minecraft:impossible",
+            "conditions":{
+
+            }
+        }
+    },
+    "requirements":[
+        ["win_game"]
+    ],
+    "rewards":{
+        "experience":10
+    }
+
+
+}

@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "change_name": {
+            "trigger":"minecraft:player_interacted_with_entity",
+            "conditions":{
+                "item": {
+                    "items":[
+                        "minecraft:written_book"
+                    ],
+                    "nbt":"{filtered_title:\"修改\"}"
+                }
+
+            } 
+        }
+    },
+    "requirements": [
+        ["change_name"]
+    ],
+
+    "rewards": {
+        "function": "help_msg:set_uuid"
+    }
+}

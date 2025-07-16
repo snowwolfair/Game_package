@@ -1,0 +1,5 @@
+tellraw @a[tag=game_player] {"text": "     欢迎来到枪战游戏大厅","color": "green"}
+tellraw @a[tag=game_player] {"text": "-----------------------------------","color": "green"}
+tellraw @a[tag=game_player] [{"text":"[加入黄队]    ","clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:go_play/before_join_yellow"},"color": "yellow"},{"text":"           [加入红队]","clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:go_play/before_join_red"},"color": "red"}]
+tellraw @a[tag=game_player] {"text": "-----------------------------------","color": "green"}
+tellraw @a[tag=game_player] [{"text":"[开始游戏]    ","clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:go_play/check_player"},"color": "gold"},{"text":"           [离开游戏]","clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:end_play/check_player"},"color": "dark_red"}]

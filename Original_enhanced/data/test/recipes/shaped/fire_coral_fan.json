@@ -1,0 +1,17 @@
+{
+    "type":"minecraft:crafting_shaped",
+    "pattern":[
+        "   ",
+        "A A",
+        "AAA"
+    ],
+    "key":{
+        "A":{
+            "item":"minecraft:fire_coral"
+        }
+    },
+    "result":{
+        "item":"minecraft:fire_coral_fan",
+        "count":1
+    }
+}

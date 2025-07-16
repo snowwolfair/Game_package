@@ -1,0 +1,17 @@
+{
+    "type":"minecraft:crafting_shaped",
+    "pattern":[
+        "   ",
+        "A A",
+        "AAA"
+    ],
+    "key":{
+        "A":{
+            "item":"minecraft:bubble_coral"
+        }
+    },
+    "result":{
+        "item":"minecraft:bubble_coral_fan",
+        "count":3
+    }
+}

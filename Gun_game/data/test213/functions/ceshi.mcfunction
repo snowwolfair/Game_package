@@ -1,0 +1,9 @@
+summon villager ~ ~ ~ {CustomName:'{"text":"军火贩子"}',NoAI:1,Offers: {Recipes:[{buy:{id:"minecraft:diamond",Count:1,tag:{display:{Name:'{"text":"货币"}',Lore:['{"text":"+20%速度","color":"blue"}']},Unbreakable:1}},maxUses:99,sell:{id:"tac:ak47",Count:1}},{buy:{id:"minecraft:diamond",Count:2,tag:{display:{Name:'{"text":"货币"}',Lore:['{"text":"货币","color":"gray"}']},Unbreakable:1}},maxUses:99,sell:{id:"tac:m24",Count:1}},{buy:{id:"minecraft:diamond",Count:1,tag:{display:{Name:'{"text":"货币"}',Lore:['{"text":"货币","color":"gray"}']},Unbreakable:1}},maxUses:99,sell:{id:"tac:light_grenade",Count:1}},{buy:{id:"minecraft:diamond",Count:1,tag:{display:{Name:'{"text":"货币"}',Lore:['{"text":"货币","color":"gray"}']},Unbreakable:1}},maxUses:99,sell:{id:"tac:dp28",Count:1}}]},VillagerData:{level:99,profession:"minecraft:nitwit"}}
+#村民交易       
+
+tellraw @a[tag=game_player] {"text": "     欢迎来到枪战游戏大厅","color": "green"}
+tellraw @a[tag=game_player] {"text": "-----------------------------------","color": "green"}
+tellraw @a[tag=game_player] [{"text":"[加入黄队]    ","clickEvent":{"action":"run_command","value":"/execute as @p run function go_play:before_join_yellow"},"color": "yellow"},{"text":"           [加入红队]","clickEvent":{"action":"run_command","value":"/execute as @p run function go_play:before_join_yellow"},"color": "red"}]
+
+              
+                                                                                                                                                                                                                                                                              

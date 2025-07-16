@@ -1,0 +1,21 @@
+{
+    "type":"minecraft:crafting_shaped",
+    "pattern":[
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key":{
+        "A":{
+            "item":"minecraft:kelp"
+        },
+        "B":{
+            "item":"minecraft:torch"
+        }
+    },
+
+    "result":{
+        "item":"minecraft:sea_pickle",
+        "count":1
+    }
+}
