@@ -1,7 +1,7 @@
 #传送tag=sand_A的盔甲架,沙子
 execute as @a[tag=in_play,scores={random_select=1,block_count=1}] at @s run teleport @e[tag=sand_A] @s 
 
-execute as @e[tag=sand_A] at @s run teleport @s ~ ~-1.48 ~ 
+execute as @e[tag=sand_A] at @s run teleport @s ~ ~-1.48 ~
 #被找到
 
 execute as @a[tag=in_play,scores={random_select=1,block_count=1}] if score @s seek_score matches 1 run kill @e[tag=sand_A]
