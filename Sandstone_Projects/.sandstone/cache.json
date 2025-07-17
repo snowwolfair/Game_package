@@ -1,0 +1,14 @@
+{
+  "C:\\Users\\16229\\Desktop\\datapack_work\\Sandstone_Projects\\gunpack\\src": {
+    "files": {
+      "pack.mcmeta": "3383831eba209abad4976341ddc6259d",
+      "data\\help_msg\\functions\\send_helpmsg.mcfunction": "7c4a35a034ec990043cb883514010b6f",
+      "data\\help_msg\\functions\\before_tp.mcfunction": "4f1ef47bb2b95943a4bf947c6086b717",
+      "data\\help_msg\\functions\\display_message.mcfunction": "baccf28a8aafc6c5b541b5ea38f4ec3d",
+      "data\\help_msg\\advancements\\help_sign.json": "d802ba3069ca344621e4f8d2a0ff48ef",
+      "data\\minecraft\\tags\\functions\\load.json": "334360d404bf145a7ed15185b526bb3b",
+      "data\\default\\functions\\__init__.mcfunction": "da89c823449c84afd01819469e80801a"
+    },
+    "resultFolder": ".sandstone\\output\\datapack\\template"
+  }
+}

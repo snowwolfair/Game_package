@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "help_sign": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:firework_rocket"
+          ],
+          "nbt": "{display:{Name:'{\"text\":\"救援信号弹\",\"color\":\"red\"}'}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "help_sign"
+    ]
+  ],
+  "rewards": {
+    "function": "help_msg:send_helpmsg"
+  }
+}
