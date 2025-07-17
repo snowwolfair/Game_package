@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "default:__init__",
+    "help_msg:display_message"
+  ]
+}
