@@ -1,3 +1,5 @@
+# 暂未调试的代码
+
 say hh
 scoreboard objectives add tempnum dummy
 scoreboard players add #numcut tempnum 0

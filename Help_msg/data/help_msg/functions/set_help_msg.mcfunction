@@ -1,3 +1,6 @@
+
+# 暂未调试的代码
+
 execute as @s if score @s tempnum matches 1 run data modify storage help_msg:test test1 set from entity @e[type=item_frame,distance=..5,limit=1] Item.tag.pages[]
 execute as @s if score @s tempnum matches 2 run data modify storage help_msg:test test2 set from entity @e[type=item_frame,distance=..5,limit=1] Item.tag.pages[]
 execute as @s if score @s tempnum matches 3 run data modify storage help_msg:test test3 set from entity @e[type=item_frame,distance=..5,limit=1] Item.tag.pages[]

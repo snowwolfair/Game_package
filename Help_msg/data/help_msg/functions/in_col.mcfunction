@@ -1,3 +1,5 @@
+# 暂未调试的代码
+
 scoreboard players add @s tempnum 1
 
 execute as @s if score @s tempnum > #numcut tempnum run scoreboard players operation #numcut tempnum = @s tempnum
