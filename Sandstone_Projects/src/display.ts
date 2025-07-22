@@ -2,8 +2,6 @@
  * This file is just an example.
  * You can delete it!
  */
-
-import { join } from 'path';
 import {
   MCFunction,
   say,
@@ -18,11 +16,10 @@ import {
   give,
   Selector,
   tag,
-  help,
   Objective,
   _,
   Variable,
-
+  sleep,
 
 } from 'sandstone';
 
@@ -54,8 +51,6 @@ const playerWhoSendHelp = Selector('@a',{
   }
 });
 
-
-
 const self = Selector('@s');
 const help_msg = Objective.create('help_msg','dummy');
 const help_menber = Objective.create('help_menber','dummy');
@@ -71,13 +66,16 @@ MCFunction('help_msg:send_helpmsg',() => {
   scoreboard.players.set('@s','helpmsg',0)
   tellraw(notInhelp,['[',{selector: '@s', color: "gold"},']',{text:" 发送了求援信号",color: "red",clickEvent: {action: "run_command",value: "/execute as @s run function help_msg:before_tp"},hoverEvent: {action: "show_text",contents: ["点击支援"]}}])
   tellraw(self, ["[",{selector: "@s", color: "gold"},"]",{text:" 发送了求援信号",color: "red"}])
-  _.if(help_msg(self).equalTo(1),()=>{
-    say('hahahah')
-  })
+  while(help_msg('@s').lessThan(60)){
+    sleep('1s')
+    help_msg('@s').add(1)
+  }
+  
 })
 
 MCFunction('help_msg:before_tp',() => {
-  tp
+  // 这里添加传送逻辑
+  say('传送功能待实现')
 })
 
 MCFunction('help_msg:display_message', () => {

@@ -1,0 +1,22 @@
+{
+    "reminder_times": [
+        {
+            "hour": 6,
+            "minute": 0,
+            "message": "现实时间将在5分钟后到达6:00"
+        },
+        {
+            "hour": 12,
+            "minute": 0,
+            "message": "现实时间将在5分钟后到达12:00"
+        },
+        {
+            "hour": 18,
+            "minute": 0,
+            "message": "现实时间将在5分钟后到达18:00"
+        }
+    ],
+    "prefix": "§6[提醒]§r ",
+    "advance_minutes": 5,
+    "broadcast_to_console": true
+}
