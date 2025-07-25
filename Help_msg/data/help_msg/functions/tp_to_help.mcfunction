@@ -1,8 +1,10 @@
-
+# 救援信号传送函数
 tp @s @p[tag = in_help]
 
+# 将救援者加入救援队伍
 team join help @s
 
+# 发送自定义救援信息（暂未实现）
 execute as @s if score @s tempnum matches 1 run tellraw @a[team=help] [{"text":"["},{"selector":"@s","color":"dark_aqua"},{"text":"] "},{"nbt": "test1","storage": "help_msg:test","interpret": true}]
 
 execute as @s if score @s tempnum matches 2 run tellraw @a[team=help] [{"text":"["},{"selector":"@s","color":"dark_aqua"},{"text":"] "},{"nbt": "test2","storage": "help_msg:test","interpret": true}]

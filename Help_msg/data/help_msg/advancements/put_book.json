@@ -18,6 +18,6 @@
     ],
 
     "rewards": {
-        "function": "help_msg:set_uuid"
+        "function": "help_msg:change_help_msg"
     }
 }

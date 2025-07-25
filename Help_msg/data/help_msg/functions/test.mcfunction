@@ -1,3 +1,5 @@
+# 暂未调试的代码
+
 execute as @s run say hello
 
 advancement revoke @s only help_msg:help_sign
