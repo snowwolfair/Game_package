@@ -14,10 +14,8 @@ scoreboard objectives add helpmsg dummy
 # 设置玩家的求援信号计数器
 execute as @s run scoreboard players set @s helpmsg 0
 
-# 设置玩家的房间ID
-execute as @s run scoreboard operation @s roomID = #roomid roomID
-
-scoreboard players add #roomid roomID 1
+# 设置玩家的uuid
+execute as @s run function help_msg:set_uuid
 
 # 发送求援信号
 tellraw @a[tag =! in_help] [{"text":"["},{"selector": "@s","color": "gold"},{"text":"]"},{"text":" 发送了求援信号","color": "red","clickEvent": {"action": "run_command","value": "/execute as @s run function help_msg:before_tp"},"hoverEvent": {"action": "show_text","value": [{"text":"点击支援"}]}}]
