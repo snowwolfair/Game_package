@@ -3,7 +3,7 @@ scoreboard objectives add uuid dummy
 scoreboard players set #uid uuid 0
 
 #设置标志
-scoreboard objectives add mark dummy 
+scoreboard objectives add mark dummy
 
 #设置显示计时器
 scoreboard objectives add seconds dummy
