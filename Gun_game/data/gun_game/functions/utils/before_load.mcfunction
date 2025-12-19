@@ -7,3 +7,5 @@ scoreboard objectives add gun_game_const dummy "Const"
 scoreboard players set #Max_kill_count gun_game_const 5
 scoreboard players set #Min_player_count gun_game_const 2
 scoreboard players set #Game_time_hold gun_game_const 600
+
+
