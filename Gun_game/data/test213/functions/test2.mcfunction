@@ -35,7 +35,7 @@ give @a tacz:modern_kinetic_gun{GunId:"emxarms:emx_pmg90"} 1
 give @a tacz:ammo{AmmoId:"emxarms:1045x103"} 1
 
 
-setblock ~ ~1 ~ minecraft:oak_wall_sign[]{Text1: '{"clickEvent":{"action":"run_command","value":"/execute as @p run function go_play:before_join_red"},"text":"加入红队"}',Text3: '{"text":"请站到红色混凝土上","color":"white"}',Text4: '{"text":"点击告示牌","color":"white"}',facing:west}
+setblock ~ ~1 ~ minecraft:oak_wall_sign[]{Text1: '{"clickEvent":{"action":"run_command","value":"/execute as @p run function go_play:before_join_red"},"text":"加入红队","color":"red"}',Text3: '{"text":"请站到红色混凝土上","color":"white"}',Text4: '{"text":"点击告示牌","color":"white"}',facing:west}
 # tacz:glock_17 9mm
 
 setblock ~ ~1 ~ minecraft:oak_wall_sign{Text1: '{"clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:go_hall/join_hall"},"text":"join game"}',Text2: '{"clickEvent":{"action":"run_command","value":"/execute as @p run function gun_game:go_hall/show_msg"},"text":""}'}

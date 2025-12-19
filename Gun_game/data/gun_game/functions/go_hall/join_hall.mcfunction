@@ -39,7 +39,7 @@ scoreboard objectives add yellow_kill_point teamkill.red
 #创建死亡榜
 scoreboard objectives add death_point deathCount
 
-scoreboard objectives add death_count dummy "死亡榜"
+# scoreboard objectives add death_count dummy "死亡榜"
 
 #创建击杀榜
 scoreboard objectives add kill_count playerKillCount "击杀榜"
