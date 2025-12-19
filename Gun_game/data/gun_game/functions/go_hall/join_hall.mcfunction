@@ -55,6 +55,9 @@ scoreboard objectives add new dummy "New"
 #创建winner标识
 scoreboard objectives add gun_winner dummy "Winner"
 
+#创建临时计分板
+scoreboard objectives add temp dummy
+
 #执行颜色变换
 scoreboard players set #change_time colorful_bossbar 7
 schedule function gun_game:go_hall/colorful 1t
