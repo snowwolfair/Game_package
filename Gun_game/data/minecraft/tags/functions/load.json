@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "gun_game:utils/before_load"
+    ]
+
+}
