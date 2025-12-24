@@ -1,5 +1,7 @@
 schedule clear gun_game:in_play/begin_play
 schedule clear gun_game:in_play/time_count/time_count_down
+schedule clear gun_game:in_play/yellow_kill
+schedule clear gun_game:in_play/red_kill
 
 execute if score Red_Team Team_kill_count >= Yellow_Team Team_kill_count run schedule function gun_game:end_play/winner_red 1t replace
 execute if score Yellow_Team Team_kill_count >= Red_Team Team_kill_count run schedule function gun_game:end_play/winner_yellow 1t replace
