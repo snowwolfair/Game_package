@@ -1,0 +1,25 @@
+{
+    "display":{
+        "icon":{
+            "item":"minecraft:iron_sword"
+        },
+        "title":"初次击杀",
+        "description":"首次在枪战中击杀敌方玩家",
+        "background":"minecraft:textures/block/quartz_bricks.png",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "first_kill":{
+            "trigger":"minecraft:impossible"
+        }
+    },
+    "requirements":[
+        ["first_kill"]
+    ],
+    "rewards":{
+        "experience":5
+    }
+}

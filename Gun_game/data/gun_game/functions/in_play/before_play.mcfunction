@@ -2,6 +2,20 @@
 execute as @a[team=yellow] at @s run tag @s add in_play
 execute as @a[team=red] at @s run tag @s add in_play
 
+#标记游戏进行中
+scoreboard players set #running gun_game_const 1
+scoreboard players set #forfeit gun_game_const 0
+
+#记录本局局号
+scoreboard players add #round gun_game_const 1
+scoreboard players operation @a[tag=in_play] gg_round = #round gun_game_const
+
+#传送到各队出生点并设置重生点
+tp @a[tag=in_play,team=red] 408 64 -156
+spawnpoint @a[tag=in_play,team=red] 408 64 -156
+tp @a[tag=in_play,team=yellow] 442 61 -310
+spawnpoint @a[tag=in_play,team=yellow] 442 61 -310
+
 # execute as @a[team=yellow] at @s run tag @s remove game_player 
 # execute as @a[team=red] at @s run tag @s remove game_player
 

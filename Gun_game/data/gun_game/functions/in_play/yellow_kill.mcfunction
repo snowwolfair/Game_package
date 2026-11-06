@@ -1,9 +1,10 @@
-#个人击杀榜计数
-execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1 run scoreboard players add @s kill_count 1
+#个人击杀榜由 kill_count(playerKillCount) 自动计数
 #团队击杀榜计数
-execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1 run scoreboard players add Yellow_Team Team_kill_count 1
+execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1.. run scoreboard players operation Yellow_Team Team_kill_count += @s yellow_kill_point
 #击杀后给与积分
-execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1 run give @s minecraft:diamond{display:{Name:'{"text":"积分"}',Lore:['{"text":"军事演习唯一指定通用品，需要在军需官处换成货币","color":"purple"}']},Unbreakable:true} 1
+execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1.. run give @s minecraft:diamond{display:{Name:'{"text":"积分"}',Lore:['{"text":"军事演习唯一指定通用品，需要在军需官处换成货币","color":"purple"}']},Unbreakable:true} 1
+#初次击杀成就
+execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1.. run advancement grant @s only gun_game:first_kill
 #将击杀分数清零，准备下一次计数
 execute as @a[tag=in_play,team=yellow] if score @s yellow_kill_point matches 1.. run scoreboard players set @s yellow_kill_point 0
 

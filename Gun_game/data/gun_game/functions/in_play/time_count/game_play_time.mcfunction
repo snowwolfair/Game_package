@@ -1,5 +1,5 @@
 # 创建顶部倒计时
-bossbar add minecraft:gun_game_play_time [{"text":"游戏时间:","color":"blue"},{"score":{"name":"#GungameTimehold","objective":"gun_game_play_time"},"color":"red"},{"text":"秒","color":"blue"}]
+bossbar add minecraft:gun_game_play_time [{"text":"游戏时间:","color":"blue"},{"score":{"name":"#GungameTimeCountdown","objective":"gun_game_play_time"},"color":"red"},{"text":"秒","color":"blue"}]
 
 # 设置顶部倒计时颜色为绿色
 bossbar set minecraft:gun_game_play_time color green
