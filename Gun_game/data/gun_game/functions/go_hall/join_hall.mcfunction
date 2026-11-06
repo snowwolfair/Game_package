@@ -1,5 +1,5 @@
 #添加tag:玩家
-execute run tag @p add game_player
+tag @s add game_player
 
 #添加大厅标题
 execute run bossbar add minecraft:hall "Have fun!"
@@ -25,6 +25,8 @@ team modify yellow color yellow
 #设置队伍属性
 team modify red nametagVisibility hideForOtherTeams
 team modify yellow nametagVisibility hideForOtherTeams
+team modify red friendlyFire false
+team modify yellow friendlyFire false
 
 #创建队伍计分板侧边栏
 scoreboard objectives add Choice_team dummy "Team"
