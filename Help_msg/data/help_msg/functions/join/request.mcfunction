@@ -20,7 +20,8 @@ execute as @a[tag=hm_req] if score @s hm_slot = #want hm_tmp if score @s hm_cd >
 execute unless entity @s[tag=hm_req] unless entity @s[tag=hm_helper] unless entity @a[tag=hm_match] run tellraw @s ["",{"text":"[救援信号] ","color":"red","bold":true},{"text":"救援信号已过期","color":"gray"}]
 # 找到了：前往救援
 execute unless entity @s[tag=hm_req] unless entity @s[tag=hm_helper] if entity @a[tag=hm_match] run function help_msg:join/accept
-# 没有成为救援者（信号过期等）：重新开启按钮，还能点其他仍有效的求援
-execute unless entity @s[tag=hm_helper] run scoreboard players enable @s hm_join
+# 无论结果如何都重新开启按钮（trigger 用过一次会自动关闭）：
+# 没去成的人还能点其他仍有效的求援；救援中的人再点会走到上面的「你已经在救援中了」，而不是看到原版的红字报错
+scoreboard players enable @s hm_join
 # 用完就去掉临时标签
 tag @a remove hm_match
